@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './App.css'
 import UseStateArray from "./components/UseStateArray";
+import BasicForm from "./components/form/BasicForm";
 
 const App = () =>{
 
@@ -17,7 +18,8 @@ const App = () =>{
     //   <h2>{myName}</h2>
     //   <button className="btn" onClick={changeName}>Click to change name</button>
     // </div>
-    <UseStateArray/>
+    // <UseStateArray/>
+    <BasicForm />
   )
 }
 export default App

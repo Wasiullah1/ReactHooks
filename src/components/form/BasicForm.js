@@ -8,9 +8,19 @@ const BasicForm = () => {
 
     const formSubmit = (e) => {
         e.preventDefault();
-        const newEntry = {email: email, password: password}
-        setAllEntry([...allEntry, newEntry])
+
+        if (email && password){
+            const newEntry = {id: Date().getTime().toString(), email: email, password: password}
+            setAllEntry([...allEntry, newEntry])
+
+            setEmail("");
+            setPassword("");
+        }else{
+            alert('Please Fill the data')
+        }
+        
     }
+    
   return (
     <>
         <form action="" onSubmit={formSubmit}>
@@ -27,10 +37,11 @@ const BasicForm = () => {
         </form>
         <div >
             {allEntry.map((currElm)=>{
+                const {id, email, password} = currElm
                 return(
-                    <div className='output'>
-                        <p>{currElm.email}</p>
-                        <p>{currElm.password}</p>
+                    <div className='output' key={id}>
+                        <p>{email}</p>
+                        <p>{password}</p>
                     </div>
                 )
             })}

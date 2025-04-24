@@ -3,6 +3,8 @@ import './App.css'
 import UseStateArray from "./components/UseStateArray";
 import BasicForm from "./components/form/BasicForm";
 import UseEffect1 from "./components/useEffect/UseEffect1";
+import UseEffect2 from "./components/useEffect/UseEffect2";
+
 
 const App = () =>{
 
@@ -21,7 +23,8 @@ const App = () =>{
     // </div>
     // <UseStateArray/>
     // <BasicForm />
-    <UseEffect1 />
+    // <UseEffect1 />
+    <UseEffect2 />
   )
 }
 export default App

@@ -4,6 +4,7 @@ import UseStateArray from "./components/UseStateArray";
 import BasicForm from "./components/form/BasicForm";
 import UseEffect1 from "./components/useEffect/UseEffect1";
 import UseEffect2 from "./components/useEffect/UseEffect2";
+import UseEffectApi from "./components/useEffect/UseEffectApi";
 
 
 const App = () =>{
@@ -24,7 +25,8 @@ const App = () =>{
     // <UseStateArray/>
     // <BasicForm />
     // <UseEffect1 />
-    <UseEffect2 />
+    // <UseEffect2 />
+    <UseEffectApi />
   )
 }
 export default App
